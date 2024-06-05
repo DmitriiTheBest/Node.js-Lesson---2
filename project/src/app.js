@@ -1,9 +1,5 @@
 const http = require("http");
-const fs = require("fs");
-
-const getUsers = () => {
-  return fs.readFileSync("../data/users.json");
-}
+const getUsers = require("./modules/users");
 
 const server = http.createServer((req, res) => {
   if (req.url === "/users") {
