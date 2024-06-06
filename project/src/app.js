@@ -19,6 +19,6 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-server.listen(3003, () => {
-  console.log("Server is running on address http://127.0.0.1:3003");
+server.listen(3002, () => {
+  console.log("Server is running on address http://127.0.0.1:3002");
 });
